@@ -1,0 +1,73 @@
+<Git>
+	<Git介绍>
+		gitlnlagh.2018.07	
+	</Git介绍>
+
+	<Git安装>
+			https://git-scm.com/download/win
+			https://www.sourcetreeapp.com/download-archives
+			git config --global user.name "gaoxiang"
+			git config --global user.email "igaoxian@foxmail.com"
+			git config --list<!--查看配置-->
+	</Git安装>
+
+	<Git工作流>
+			初始化版本库：git init
+			添加文件到版本库：git add ,git commit
+			查看仓库状态 git status
+			pwd 显示当前目录
+			ll展示下面所有的文件
+			mkdir demo2 创建文件demo2
+			ls -a显示所有隐藏项目
+			echo "git repo2" >>test.txt
+			git reset HEAD bush_test.txt 回归暂存区
+			git checkout -- bush_test.txt 清除
+			
+			
+			git add<!--添加到暂存区-->
+	        	git commit<!--添加到版本库-->
+			git reset HEAD<!--版本库文件覆盖暂存区-->
+			"git checkout ." or "git checkout -- <file>" <!--危险不建议，暂存区覆盖工作区-->
+			"git checkout HEAD ." or "git checkout HEAD <file>"<!--危险不建议，版本库覆盖暂存区和工作区-->
+			git rm --cached <file><!--删除暂存区的文件-->
+	</Git工作流>
+
+	<本地仓库>
+		git init [newrepo]<!--初始化-->
+		git clone git://github.com/schacon/grit.git [指定克隆后的文件名称]
+
+		ssh-keygen -t rsa -C "igaoxian@foxmail.com"
+		ssh -T git@github.com<!--测试连接是否成功-->
+		cd .ssh/
+		echo "# gxx" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+
+		git remote add origin https://github.com/gitlnla/gxx.git
+		git push -u origin master
+
+
+	</本地仓库>
+
+	<分支管理>
+		git branch（branchname）<!--创建分支，无参时显示所有分支-->
+		git checkout (branchname)<!--切换分支-->
+		git merge <!--合并分支-->
+		git log [--oneline简洁版] [--graph查看何时出现分支、何时合并] 
+		[--reverse 逆向显示] [--author=要查找的] [--before={3.weeks.ago}] [--after={2010-04-18}]
+		git tag "-a"or"-s" <tagname> -m "w3cschool.cn标签"<!--添加标签-->
+	</分支管理>
+	<远程仓库>
+		git remote add [origin] [https://github.com/gitlnla/gxx.git]
+		git remote [-v]<!--查看当前配置有哪些仓库-->
+		ssh-keygen -t rsa -C "igaoxian@foxmail.com"
+		git fetch<!--从远程仓库下载新分支与数据 该命令执行后要执行git merge远程分支到你的分支-->
+		git pull<提取远程仓库并合并到当前分支>
+		git push <远程主机名> <本地分支名>:<远程分支名>
+		git push --force origin<!--强推-->
+		git remote rm [origin2]
+	<远程仓库/>
+
+	<标签管理></标签管理>
+</Git>

@@ -1,0 +1,28 @@
+
+<反射>
+	<简介>Java反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能成为java语言的反射机制
+	<简介/>
+
+	<反射的API>
+		Class类
+		Constructor类
+		Field类
+		Method类
+	<反射的API/>
+	<Class>
+		CLass class1 = Person.class;
+		Person person = new Person();
+		Class class =  person.getClass();
+		Class class3  = Class.forName("com.wuancake.reflect.test.Person");
+	<Class/>
+	<Constructor>
+		Class class1 = Class.forName("com.wuancake.reflect.test.Person");
+		Constructor c = class1.getConstructor([String.class,String.class,int.class]);
+		Person person = (person)c.newInstance(["李狗子","男",18]);
+	<Constructor/>
+</反射>
+
+<工厂>
+	<简介><简介/>
+
+<工厂/>
