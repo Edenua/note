@@ -1,0 +1,42 @@
+<Servlet>
+	<简介>servlet是javaEE的十三个功能模块之一，是Web服务小程序<简介/>
+
+	<Servlet开发步骤>
+		创建Servlet类，继承HttpServlet
+		重写service方法，编写代码
+		配置web.xml，绑定URL
+		<!--@WebServlet-->
+	<Servlet开发步骤/>
+
+	<Servlet访问方法>
+		http://IP地址:端口/context-path/url-mapping
+		context-path默认为工程名
+	<Servlet访问方法/>
+
+	<请求方法service(),doGet(),doPost()/>
+	<Servlet请求参数>
+		request.getParameter().getParameterValues()
+		PrintWriter out = response.getWriter()
+		out.print(html);
+	<Servlet请求参数/>
+
+	<!--启动时加载-->
+	<load-on-startup>0~9999<load-on-startup>
+
+	<!---->
+	<servlet>
+  		<servlet-name>requestMethod</servlet-name>
+  		<servlet-class>com.imooc.servlet.RequestMethodServlet</servlet-class>
+  	</servlet>
+  
+  	<servlet-mapping>
+  		<servlet-name>requestMethod</servlet-name>
+  		<url-pattern>/request_method</url-pattern>
+  	</servlet-mapping>
+
+<Servlet/>
+
+<jsp>
+	<简介>jsp是javaEE的十三个功能模块之一，是服务器页面<简介/>
+
+<jsp/>
