@@ -1,0 +1,31 @@
+<JSTL>
+	<标签库分类>
+		核心标签库core
+		格式化输出表情库fmt
+		sql
+		xml
+		functions
+	<标签库分类/>
+	<核心标签库>
+		单分支：<c:if>
+		多分支：<c;choose>、<c:when>、<c:otherwise>
+		遍历：<c:forEach>
+	<核心标签库/>
+	<格式化标签库>
+		格式化日期标签库：<fmt:formatDate value="" pattern="">
+		格式化数字标签库：<fmt:formatNumber value="" pattern="">
+	<格式化标签库/>
+<JSTL/>
+
+<EL>
+	${表达式}
+	<作用域>
+		pageScope
+		requestScope
+		sessionScope
+		applicationScope
+	<作用域/>
+	<参数的输出>
+		${param.参数名}
+	<参数的输出/>
+<EL/>
